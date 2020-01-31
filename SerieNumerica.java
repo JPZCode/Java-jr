@@ -82,19 +82,73 @@ public class SerieNumerica {
         do {
             c+=1;
             d-=1;
-            System.out.print(c + ", " );
-            if (d == 95){
-                System.out.print(d);
-            } else {
-                System.out.print(d + ", ");
-            }
             contador++;
+            if (contador < 5){
+                System.out.print(c + ", " );
+                System.out.print(d + ", ");
+            } else {
+                System.out.print(c + ", " );
+                System.out.print(d);
+            }
         } while (contador < 5);
 
         System.out.println("");
         System.out.println(" --------------------------------------- ");
 
         //0,1,1,2,3,5,8,13,21,34
+        System.out.println("");
+        System.out.print("for Fibonacci: ");
 
+        int q = 0, w = 1, e = 0;
+        for (int k = 0; k < 10; k++) {
+            if (k < 9){
+                System.out.print(q + ", ");
+            } else {
+                System.out.print(q);
+            }
+            e = q + w;
+            q = w;
+            w = e;
+        }
+
+        System.out.println("");
+        int k = 0;
+        i = 0;
+        w = 1;
+        q = 0;
+        e = 0;
+        System.out.print("while Fibonacci: ");
+
+        while(i < 10){
+            if (k < 9){
+                System.out.print(q + ", ");
+                e = q + w;
+                q = w;
+                w = e;
+            } else {
+                System.out.print(q);
+            }
+            i++;
+        }
+        System.out.println("");
+        System.out.print("do while Fibonacci: ");
+
+        i = 0;
+        k = 0;
+        w = 1;
+        q = 0;
+        e = 0;
+
+        do {
+            if (k < 9){
+                System.out.print(q + ", ");
+                e = q + w;
+                q = w;
+                w = e;
+            } else {
+                System.out.print(q);
+            }
+            i++;
+        } while( i < 10);
     }
 }
