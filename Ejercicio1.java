@@ -7,7 +7,7 @@ public class Ejercicio1 {
         Scanner entrada = new Scanner(System.in);
 
         System.out.print("Cuantas filas deseas?");
-        filas = entrada.nextInt();
+        filas = entrada.nextInt(); 
         System.out.print("Cuantas columnas deseas?");
         columnas = entrada.nextInt();
 
