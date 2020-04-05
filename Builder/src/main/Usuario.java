@@ -5,6 +5,8 @@ public class Usuario {
 	private String nombre;
 	private String apellido;
 	
+	private boolean medioContacto;
+	
 	private String email;
 	private String telefono;
 	private String direccion;
@@ -33,7 +35,7 @@ public class Usuario {
 		this.direccion = "";
 	}
 	
-	public static Usuario Make(String nombre, String apellido) {
+	public static Usuario Make(String nombre, String apellido) { // Constructor
 		return new Usuario(nombre, apellido);
 	}
 	
