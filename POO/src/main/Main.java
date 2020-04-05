@@ -6,6 +6,7 @@ public class Main {
 		Jaguar yagua =  new Jaguar(10, 120f);
 	
 		
+		
 		System.out.println(yagua);
 	}
 }

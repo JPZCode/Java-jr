@@ -6,7 +6,8 @@ public class Jaguar {
 	private float peso;
 	
 	public Jaguar(int edda, float peso) { // Constructor
-		
+		this.setEdda(edda);
+		this.setPeso(peso);
 	}
 	
 	public int getEdda() {
@@ -24,6 +25,6 @@ public class Jaguar {
 	}
 	
 	public String toString() {
-		return "Mi edad es: " + this.getEdda() + " Mi peso es: " + this.getPeso();
+		return "Mi edad es " + this.getEdda() + " Mi peso es " + this.getPeso();
 	}
 }
