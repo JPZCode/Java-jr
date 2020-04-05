@@ -15,6 +15,11 @@ public class Jaguar extends Animal implements IFelino{
 		this.setPeso(0.0f);
 	}
 	
+	public Jaguar(float peso) {
+		this.setEdda(0);
+		this.setPeso(peso);
+	}
+	
 	public Jaguar(int edda, float peso) { // Constructor
 		this.setEdda(edda);
 		this.setPeso(peso);
