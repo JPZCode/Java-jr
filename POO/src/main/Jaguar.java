@@ -1,6 +1,6 @@
 package main;
 
-public class Jaguar {
+public class Jaguar extends Animal{
 
 	private int edda;
 	private float peso;
