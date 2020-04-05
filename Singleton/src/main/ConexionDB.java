@@ -10,7 +10,7 @@ public class ConexionDB {
 		
 	}
 	
-	public static ConexionDB obtenerConexion() {
+	public synchronized static ConexionDB obtenerConexion() {
 		
 		if(conexion == null) { // No se ha instanciado
 			conexion = new ConexionDB();
