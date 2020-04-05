@@ -9,5 +9,7 @@ public class Main {
 		
 		yagua.comer();
 		yagua.dormir();
+		
+		yagua.rugir();
 	}
 }
